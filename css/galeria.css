@@ -15,6 +15,7 @@
         height:7em;
         background-color:rgb(211, 206, 206);
         border-radius: 0.5em;
+        box-shadow: 0.6em 0 1em rgba(0, 0, 0, .6);
       
         padding: 1rem auto;
         width: 100%;
@@ -38,7 +39,7 @@
                 background: rgb(89, 109, 89);
                 color: white;
                 
-                transition: all 1s linear;
+               
                 border-radius: 0.7em;
                 }
                  .menu__a{
@@ -64,7 +65,16 @@
                            
                         }
  
-                        
+                .nav-toggle{
+                    color: #90AD4C;
+                    background:none;
+                    border:none;
+                    font-size:30px;
+                    padding: 0 20px;
+                    line-height: 60px;
+
+                    display: none;
+                }        
                         
                         
                         
@@ -129,4 +139,118 @@
 }
 .h2-footer{
     font-size: 1em;
+}
+
+@media  (max-width: 768px){
+    .header{
+        padding: 1em;
+        width: 100%;
+      
+    }
+    .logo{
+        padding: 0 20px;
+        line-height: 60px;
+     
+    }
+       
+    .logo-nav-container{
+            width: 100%;
+            height: 60px;
+            background-color:rgb(211, 206, 206);
+            border-radius: 0.3em;
+            box-shadow: 0.3em 0 1em rgba(0, 0, 0, .6);
+          
+            padding: 1rem auto;
+            width: 100%;
+            color: black;
+    }
+            
+    .menu__ul{
+    flex-direction: column;
+    padding-top: 1em;
+    background-color: whitesmoke;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 85px;
+    width: 100%;
+    border-radius: 0.3em;
+    align-items: center;
+    height: calc(100%-85px);
+    overflow: auto;
+            }
+.menu__li{
+padding: 1em;
+display: block;
+
+}
+    
+.menu__li:hover{
+background: rgb(89, 109, 89);
+color: white;
+
+transition: all 1s linear;
+border-radius: 0.7em;
+}
+.menu__a{
+text-decoration: none;
+color: black;
+}
+.menu__a:hover{
+    color:white;
+}            
+.sub-nav{
+display: none;}
+.sub-nav:hover{
+    display: contents;
+}
+li{
+text-decoration-line: none;
+list-style: none;}
+a{
+text-decoration-line: none;
+color: black;}
+a:hover{
+    color: white;
+    
+}
+.breadcrumb{
+    display:inline-block;
+    background-color: black;
+    width: 100%;
+    justify-content: space-between ;
+    align-items: center;
+    margin: 0.5em 0em; 
+    height: 4em; 
+    overflow: hidden;
+   
+}
+
+.nav-toggle{
+color: #90AD4C;
+background:none;
+border:none;
+font-size:30px;
+padding: 0 20px;
+line-height: 60px;
+
+display: inline;
+}        
+
+.galeria-container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 30em;
+    grid-gap: 0.5em;
+    padding: 0.5em;
+    position: fixed;
+    top: 400px;
+}
+.body{
+    overflow-y: auto;
+}
+.footer{
+    background-color: rgb(216, 215, 215); 
+}
 }
