@@ -148,13 +148,14 @@ body .container {
 
 @media only screen and (max-width: 768px) {
   .main h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 }
 
 .main .nosotros {
   padding: 2em;
   background-color: white;
+  margin-top: 1em;
 }
 
 @media only screen and (max-width: 768px) {
